@@ -55,7 +55,7 @@ require([
 			// Option documentation is here:
 			// https://developers.arcgis.com/javascript/jsapi/map-amd.html#map1
 			basemap: 'gray',
-			center: [-6.06,54.71],
+			center: [-6.11767,54.66364],
 			zoom: 10,
 			minZoom: 8,
 			maxZoom: 15,
