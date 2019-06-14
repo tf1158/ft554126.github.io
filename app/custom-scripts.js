@@ -86,7 +86,8 @@ require([
 		indexMapLayer2.setRenderer(renderer2);
 
 		// Add CSV layer to map
-		indexMap.addLayer(indexMapLayer,indexMapLayer2);
+		indexMap.addLayer(indexMapLayer);
+		indexMap.addLayer(indexMapLayer2);
 
 		// Select current section in index map on Loading
 		setIconDisplay(app.data.getCurrentSectionIndex());
