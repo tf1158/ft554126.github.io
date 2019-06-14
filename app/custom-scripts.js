@@ -32,16 +32,13 @@ require([
 		var LabelField = 'Label';
 		var StoryIndexField = 'StoryIndex';
 		var ActiveField = 'Active';
-		var Invis ='Home';
 		// Change the colors of the default and active symbols on the map.
 		// Color documentation available here:
 		// https://dojotoolkit.org/reference-guide/1.10/dojo/_base/Color.html
 		var defaultMarkerColor = new Color([136, 193, 108, 0.65]);
 		var activeMarkerColor = new Color([187, 226, 167, 0.75]);
-		var invismarkercolor = new Color([230, 30, 30, 0.7]);
 		// The path to your csv file.
 		var csvPath = 'resources/index-map/index-map-layer.csv';
-		var csvPath2 = 'resources/index-map/home-layer.csv';
 		// CONFIGURATION VARIABLES END
 
 		// variable stores currently selected graphic
@@ -70,12 +67,10 @@ require([
 
 		// Load CSV File as point later
 		var indexMapLayer = csv = new CSVLayer(csvPath);
-		var indexMapLayer2 = csv = new CSVLayer(csvPath2);
 
 		// Create simple point symbols
 		var activeMarker =  new SimpleMarkerSymbol('solid', 15, null, activeMarkerColor);
 		var defaultMarker = new SimpleMarkerSymbol('solid', 12, null, defaultMarkerColor);
-		var defaultInvis = new SimpleMarkerSymbol('solid', 12, null, invismarkercolor);
 
 		// Change the CSV Layer renderer to use the symbols we just created
 		var renderer = new UniqueValueRenderer(defaultMarker,ActiveField);
