@@ -76,6 +76,44 @@
 	<body class="claro">
 		<style>
 			/* CUSTOM CSS RULES */
+			#index-map{
+				position: relative;
+				width: 100%;
+				height: 25%;
+				max-height: 400px;
+				min-height: 200px;
+				margin-bottom: 2px;
+			}
+			.sectionPanel .appTitle.anchored{
+				margin-top: 5px;
+			}
+			#index-map-info{
+				background-color: #006900; /* Point hover tooltip background color */
+				color: #fff8e8; /* Point hover tooltip text color */
+				display: none;
+				position: fixed;
+				font-weight: bold;
+				padding: 5px;
+				margin: -10px 0 0 5px;
+				border-radius: 5px;
+				z-index: 100;
+			}
+			#index-map-helper{
+				display: none;
+			}
+			#index-map:hover #index-map-helper.active{
+				background-color: #fff8e8; /* Point hover tooltip background color */
+				color: #006900; /* Point hover tooltip text color */
+				display: block;
+				position: absolute;
+				left: 50%;
+				margin-left: -116px;
+				bottom: 20px;
+				padding: 5px 10px;
+				border-radius: 30px;
+				cursor: pointer;
+				z-index: 30;
+			}
 		</style>
 
 		<!-- Builder top panel is injected here -->
@@ -112,6 +150,13 @@
 									</tr>
 								</table>
 							</div>
+							<div id="index-map">
+	<p id="index-map-info"></p>
+	<div id="index-map-helper" class="active">
+		<!-- Helper Tooltip text to show until user first clicks on the map -->
+		Click a park to explore
+	</div>
+</div>
 							<!-- <div class="resizer"></div> -->
 							<button class="scroll" tabindex="-1">
 								<div class="scrollInner" data-toggle="tooltip"></div>
