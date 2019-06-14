@@ -1,7 +1,6 @@
 Label,Longitude,Latitude,Active,StoryIndex
 3mile Water Conservation Park,-73.967138,40.781488,FALSE,1
-National Mall,"
--77.036663",38.889828,FALSE,2
+National Mall,"-77.036663",38.889828,FALSE,2
 Lincoln Park,-87.640998,41.949764,FALSE,3
 Mission Bay Park,-117.23365,32.774408,FALSE,4
 Balboa Park,-117.145587,32.731278,FALSE,5
