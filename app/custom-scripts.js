@@ -35,8 +35,8 @@ require([
 		// Change the colors of the default and active symbols on the map.
 		// Color documentation available here:
 		// https://dojotoolkit.org/reference-guide/1.10/dojo/_base/Color.html
-		var defaultMarkerColor = new Color([114, 100, 87, 0.7]);
-		var activeMarkerColor = new Color([0, 105, 0, 0.9]);
+		var defaultMarkerColor = new Color([136, 193, 108, 0.65]);
+		var activeMarkerColor = new Color([187, 226, 167, 0.75]);
 		// The path to your csv file.
 		var csvPath = 'resources/index-map/index-map-layer.csv';
 		// CONFIGURATION VARIABLES END
