@@ -81,6 +81,9 @@ require([
 		var renderer = new UniqueValueRenderer(defaultMarker,ActiveField);
 		renderer.addValue('TRUE', activeMarker);
 		indexMapLayer.setRenderer(renderer);
+		var renderer2 = new uniqueValueRenderer(defaultInvis,ActiveField);
+		renderer.addValue('Home',defaultInvis);
+		indexMapLayer2.setRenderer(renderer2);
 
 		// Add CSV layer to map
 		indexMap.addLayer(indexMapLayer);
