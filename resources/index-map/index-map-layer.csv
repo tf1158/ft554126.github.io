@@ -1,12 +1,13 @@
-Label,Longitude,Latitude,Active,StoryIndex,
-3mile Water Conservation Park,-5.9281297,54.6922980,FALSE,1,
-Alexander Irvine,-6.2137688,54.7143500,FALSE,2,
-Antrim Castle Gardens,-6.2236954,54.7173863,FALSE,3,
-Antrim Lough Shore,-6.2370400,54.7173580,FALSE,4,
-Ballyclare War Memorial,-5.9939312,54.7516963,FALSE,5,
-Braden Glen,-5.9145753,54.6584477,FALSE,6,
-Crumlin Glen,-6.2129388,54.6231981,FALSE,7,
-Former Pitches at Steeple,-6.2068701,54.7234293,FALSE,8,
-Gideons Green,-5.9036695,54.6575427,FALSE,9,
-Hazelbank Park,-5.9013553,54.6621229,FALSE,10,
-Jordanstown Loughshore, -5.8808626,54.6819758,FALSE,11,
+Label,Longitude,Latitude,Active,StoryIndex,visible
+,-6.11767,54.69,FALSE,0,no,
+3mile Water Conservation Park,-5.9281297,54.6922980,FALSE,1,yes
+Alexander Irvine,-6.2137688,54.7143500,FALSE,2,yes
+Antrim Castle Gardens,-6.2236954,54.7173863,FALSE,3,yes
+Antrim Lough Shore,-6.2370400,54.7173580,FALSE,4,yes
+Ballyclare War Memorial,-5.9939312,54.7516963,FALSE,5,yes
+Braden Glen,-5.9145753,54.6584477,FALSE,6,yes
+Crumlin Glen,-6.2129388,54.6231981,FALSE,7,yes
+Former Pitches at Steeple,-6.2068701,54.7234293,FALSE,8,yes
+Gideons Green,-5.9036695,54.6575427,FALSE,9,yes
+Hazelbank Park,-5.9013553,54.6621229,FALSE,10,yes
+Jordanstown Loughshore, -5.8808626,54.6819758,FALSE,11,yes
