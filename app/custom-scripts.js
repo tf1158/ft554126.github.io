@@ -4,7 +4,6 @@ require([
 	'dojo/_base/array',
 	'dojo/dom-geometry',
 	'esri/map',
-	'esri/widgets/Home',
 	'esri/layers/CSVLayer',
 	'esri/Color',
 	'esri/symbols/SimpleMarkerSymbol',
@@ -64,13 +63,7 @@ require([
 			logo: false,
 			showAttribution: false
 		});
-		var homeBtn = new Home({
-          view: view
-        });
-
-        // Add the home button to the top left corner of the view
-        view.ui.add(homeBtn, "top-left");
-      });
+	
 
 		// Load CSV File as point later
 		var indexMapLayer = csv = new CSVLayer(csvPath);
