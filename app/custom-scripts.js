@@ -56,9 +56,9 @@ require([
 			// https://developers.arcgis.com/javascript/jsapi/map-amd.html#map1
 			basemap: 'dark-gray',
 			center: [-6.06,54.71],
-			zoom: 7,
-			minZoom: 1,
-			maxZoom: 8,
+			zoom: 11,
+			minZoom: 8,
+			maxZoom: 15,
 			// You don't need to change these
 			logo: false,
 			showAttribution: false
