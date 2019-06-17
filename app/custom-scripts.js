@@ -1,3 +1,5 @@
+Code to add a custom index map
+
 // Loading all required dojo and esri modules used in index map
 require([
 	'dojo/topic',
@@ -80,7 +82,9 @@ require([
 
 		// Add CSV layer to map
 		indexMap.addLayer(indexMapLayer);
-		
+
+		// Select current section in index map on Loading
+		setIconDisplay(app.data.getCurrentSectionIndex());
 
 		// Add map events
 		indexMapLayer.on('click',function(event){
