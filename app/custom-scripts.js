@@ -6,6 +6,8 @@ require([
 	'esri/map',
 	'esri/layers/CSVLayer',
 	'esri/Color',
+	"esri/views/MapView",
+	"esri/layers/FeatureLayer"
 	'esri/symbols/SimpleMarkerSymbol',
 	'esri/renderers/UniqueValueRenderer',
 ], function(
@@ -80,6 +82,13 @@ require([
 
 		// Add CSV layer to map
 		indexMap.addLayer(indexMapLayer);
+		
+		// test to add centre point layer from AGOL
+		var featureLayer = new FeatureLauer({
+			url: "https://services7.arcgis.com/OwWrEnEHMDRIJssU/arcgis/rest/services/park_explorer_HomePoint/FeatureServer"
+		});
+		
+		indexMap.add(featureLayer);
 
 		// Select current section in index map on Loading
 		setIconDisplay(app.data.getCurrentSectionIndex());
