@@ -37,8 +37,10 @@ require([
 		// https://dojotoolkit.org/reference-guide/1.10/dojo/_base/Color.html
 		var defaultMarkerColor = new Color([136, 193, 108, 0.65]);
 		var activeMarkerColor = new Color([187, 226, 167, 0.75]);
+		var HomeMarkerColor = new Color([rgba(240, 51, 199, 1]);
 		// The path to your csv file.
 		var csvPath = 'resources/index-map/index-map-layer.csv';
+		var csvPath2 = 'resources/index-map/home-layer.csv';
 		// CONFIGURATION VARIABLES END
 
 		// variable stores currently selected graphic
@@ -67,10 +69,12 @@ require([
 
 		// Load CSV File as point later
 		var indexMapLayer = csv = new CSVLayer(csvPath);
+		var HomeMapLayer = csv = new CSVLayer(csvPath2);
 
 		// Create simple point symbols
 		var activeMarker =  new SimpleMarkerSymbol('solid', 15, null, activeMarkerColor);
 		var defaultMarker = new SimpleMarkerSymbol('solid', 12, null, defaultMarkerColor);
+		var homeMarker = new SimpleMarkerSymbol('solid', 15, null. HomeMarkerColor);
 
 		// Change the CSV Layer renderer to use the symbols we just created
 		var renderer = new UniqueValueRenderer(defaultMarker,ActiveField);
@@ -80,7 +84,7 @@ require([
 
 		// Add CSV layer to map
 		indexMap.addLayer(indexMapLayer);
-		
+		indecMap.addLayer(HomeMapLayer);
 
 		// Select current section in index map on Loading
 		setIconDisplay(app.data.getCurrentSectionIndex());
